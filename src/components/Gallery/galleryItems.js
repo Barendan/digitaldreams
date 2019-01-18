@@ -1,5 +1,5 @@
 import React from 'react';
-import Slick from 'react-slick';
+// import Slick from 'react-slick';
 
 
 const GalleryItems = (props) => {
@@ -7,15 +7,6 @@ const GalleryItems = (props) => {
 	let template = null;
 	let catalog = props.data.catalog;
 
-	const settings = {
-		dots: true,
-		infinite: true,
-		arrows: false,
-		speed: 500,
-		slidesToShow: 1,
-		sldiesToScroll: 1,
-		...props.settings
-	}
 	// console.log(catalog)
 
 	if(catalog){
@@ -41,9 +32,9 @@ const GalleryItems = (props) => {
 	}
 
 	return(
-		<Slick {...settings} >
+		<div>
 			{template}
-		</Slick>
+		</div>
 	)
 }
 

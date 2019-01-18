@@ -12,7 +12,9 @@
 }
 
 .display_image {
-
+	width:20%;
+	height: 20%;
+	background-size: cover;
 }
 
 .display_title {
