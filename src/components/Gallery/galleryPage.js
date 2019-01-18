@@ -1,17 +1,23 @@
 import React, { Component } from 'react';
 
+import GalleryItems from './galleryItems';
+import './galleryPage.css';
+
+import JSON from '../../catalog.json';
 
 
 class GalleryPage extends Component {
 
-	state = {
 
+	state = {
+		data: []
 	}
 
 	render(){
+		console.log(JSON)
 		return(
 			<div>
-				gallery page
+				<GalleryItems />
 			</div>
 		)
 	}

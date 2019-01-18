@@ -14,19 +14,19 @@
 			"id":1,
 			"title":"Combadi Contact",
 			"image":"combadi.png",
-			"category":["contact"],
+			"category":["contact"]
 		},
 		{
 			"id":2,
 			"title":"Hash Blog",
 			"image":"bloghash.jpg",
-			"category":["blog"],
+			"category":["blog"]
 		},
 		{
 			"id":3,
 			"title":"Blog-Masonry",
 			"image":"blogmason.jpg",
-			"category":["blog"],
+			"category":["blog"]
 		}
 	],
 	"website":[
@@ -565,22 +565,6 @@
 			"link":"http://direnduvar.com/#x=-102&y=-91&z=3",
 			"description":"turkish for resistor wall or maybe resistance wall, very interesting concept, everyone can sign a wall, there is a lot of space and everyone else can see it. have not yet figured out how to write myself",
 			"category":["interactive"]
-		},
-		{
-			"id":69,
-			"title":"",
-			"image":"",
-			"link":"",
-			"description":"",
-			"category":[""]
-		},
-		{
-			"id":70,
-			"title":"",
-			"image":"",
-			"link":"",
-			"description":"",
-			"category":[""]
-		},
+		}
 	]
 }
