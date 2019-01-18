@@ -8,16 +8,14 @@ import JSON from '../../catalog.json';
 
 class GalleryPage extends Component {
 
-
 	state = {
-		data: []
+		data: JSON
 	}
 
 	render(){
-		console.log(JSON)
 		return(
-			<div>
-				<GalleryItems />
+			<div className="gallery_wrapper">
+				<GalleryItems data={this.state.data}/>
 			</div>
 		)
 	}

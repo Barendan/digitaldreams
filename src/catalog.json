@@ -1,42 +1,12 @@
 {
-	"article":[
-		{
-			"id":"",
-			"title":"",
-			"image":"",
-			"link":"",
-			"description":"",
-			"category":""
-		}
-	],
-	"picture":[
-		{
-			"id":1,
-			"title":"Combadi Contact",
-			"image":"combadi.png",
-			"category":["contact"]
-		},
-		{
-			"id":2,
-			"title":"Hash Blog",
-			"image":"bloghash.jpg",
-			"category":["blog"]
-		},
-		{
-			"id":3,
-			"title":"Blog-Masonry",
-			"image":"blogmason.jpg",
-			"category":["blog"]
-		}
-	],
-	"website":[
+	"catalog":[
 		{
 			"id":1,
 			"title":"Marine SAS",
 			"image":"msas.png",
 			"link":"http://marinesas.com/",
 			"description":"Design Scheme, color choices, parallax effect, simplistic, onHover water effect, world map, menu",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":2,
@@ -44,7 +14,7 @@
 			"image":"tklein.png",
 			"link":"http://titusklein.com/",
 			"description":"cover page, onHovers, simplistic, giant X on menu",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":3,
@@ -52,7 +22,7 @@
 			"image":"we3.png",
 			"link":"https://we3.jam3.com/developer",
 			"description":"intro, color scheme, design layout, onScroll transitions",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":4,
@@ -60,7 +30,7 @@
 			"image":"ssveta.png",
 			"link":"http://silasveta.com/",
 			"description":"gradient background, font colors vs background, creative project display",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":5,
@@ -68,7 +38,7 @@
 			"image":"riangle.png",
 			"link":"https://www.riangle.com/",
 			"description":"unique design, menu, map, large 3d images ",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":6,
@@ -76,7 +46,7 @@
 			"image":"emil.png",
 			"link":"http://www.emilianobarri.com/proyectos",
 			"description":"color scheme, 3d appearence,",
-			"category":["design", "colors"]
+			"category":["design", "colors","website"]
 		},
 		{
 			"id":7,
@@ -84,7 +54,7 @@
 			"image":"pandp.png",
 			"link":"https://www.plugandplaydesign.co.uk/",
 			"description":"onHover popup, blog, top menu",
-			"category":["design", "basic"]
+			"category":["design", "basic","website"]
 		},
 		{
 			"id":8,
@@ -92,7 +62,7 @@
 			"image":"mairik.png",
 			"link":"http://mairik.com/",
 			"description":"image onHovers, elegant feel, transition onScroll",
-			"category":["design", "onHover"]
+			"category":["design", "onHover","website"]
 		},
 		{
 			"id":9,
@@ -100,7 +70,7 @@
 			"image":"faqgohealth.png",
 			"link":"https://gohealthynatural.com/pages/faqs",
 			"description":"",
-			"category":["faq"]
+			"category":["faq","website"]
 		},
 		{
 			"id":11,
@@ -108,7 +78,7 @@
 			"image":"faq5hourenergy.png",
 			"link":"https://5hourenergy.com/facts/faqs/",
 			"description":"",
-			"category":["faq"]
+			"category":["faq","website"]
 		},
 		{
 			"id":12,
@@ -116,7 +86,7 @@
 			"image":"contactpp.png",
 			"link":"https://www.plugandplaydesign.co.uk/contact/",
 			"description":"",
-			"category":["contact"]
+			"category":["contact","website"]
 		},
 		{
 			"id":13,
@@ -124,7 +94,7 @@
 			"image":"youandi.png",
 			"link":"https://www.youandigraphics.com/contact.html",
 			"description":"",
-			"category":["contact"]
+			"category":["contact","website"]
 		},
 		{
 			"id":14,
@@ -132,7 +102,7 @@
 			"image":"vito.png",
 			"link":"http://www.vitosalvatore.com/contact/",
 			"description":"",
-			"category":["contact"]
+			"category":["contact","website"]
 		},
 		{
 			"id":15,
@@ -140,7 +110,7 @@
 			"image":"kean.png",
 			"link":"http://blog.keenancummings.com/",
 			"description":"",
-			"category":["blog"]
+			"category":["blog","website"]
 		},
 		{
 			"id":16,
@@ -148,7 +118,7 @@
 			"image":"massive.png",
 			"link":"http://massive.markup.themebucket.net/mp-index-blog-2.html",
 			"description":"",
-			"category":["blog"]
+			"category":["blog","website"]
 		},
 		{
 			"id":17,
@@ -156,7 +126,7 @@
 			"image":"quirk.png",
 			"link":"http://quirksville.tumblr.com/",
 			"description":"",
-			"category":["blog"]
+			"category":["blog","website"]
 		},
 		{
 			"id":18,
@@ -164,7 +134,7 @@
 			"image":"expert.png",
 			"link":"https://yourweb.expert/",
 			"description":"old design was better, simple, letters using clip, typed.js, links to blog",
-			"category":["portfolio"]
+			"category":["portfolio","website"]
 		},
 		{
 			"id":19,
@@ -172,7 +142,7 @@
 			"image":"kiri.png",
 			"link":"http://kirichik.com/#works",
 			"description":"simplistic, chill menu, display work",
-			"category":["portfolio", "design"]
+			"category":["portfolio", "design","website"]
 		},
 		{
 			"id":20,
@@ -180,7 +150,7 @@
 			"image":"cihad.png",
 			"link":"http://cihadturhan.com/",
 			"description":"top menu, project display, about me diagram, color schemes",
-			"category":["portfolio", "design"]
+			"category":["portfolio", "design","website"]
 		},
 		{
 			"id":21,
@@ -188,7 +158,7 @@
 			"image":"bundy.png",
 			"link":"http://bundy.madebywild.com/",
 			"description":"glance video effect, content display, design, menu onHover, onScroll",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":22,
@@ -196,7 +166,7 @@
 			"image":"neil.png",
 			"link":"http://neilcarpenter.com/",
 			"description":"eye-catching opener, simple, reactive",
-			"category":["portfolio"]
+			"category":["portfolio","website"]
 		},
 		{
 			"id":23,
@@ -204,7 +174,7 @@
 			"image":"mstudio.png",
 			"link":"http://www.mstudio.com/",
 			"description":"interactive, colorful, ",
-			"category":["portfolio","interactive"]
+			"category":["portfolio","interactive","website"]
 		},
 		{
 			"id":24,
@@ -212,7 +182,7 @@
 			"image":"andeiner.png",
 			"link":"http://andeinerseite.video/",
 			"description":"great movie, game built in, space bar enabled",
-			"category":["interactive"]
+			"category":["interactive","website"]
 		},
 		{
 			"id":25,
@@ -220,7 +190,7 @@
 			"image":"duha.png",
 			"link":"https://duhaihang.com/portfolio/2016/#/work/",
 			"description":"interactive background, unique design, font type/size, transition effects, great design examples located in projects",
-			"category":["portfolio","interactive"]
+			"category":["portfolio","interactive","website"]
 		},
 		{
 			"id":26,
@@ -228,7 +198,7 @@
 			"image":"resn.png",
 			"link":"https://resn.co.nz/",
 			"description":"press mouse to start, different interaction each time, same starting point, vivid graphics",
-			"category":["interactive"]
+			"category":["interactive","website"]
 		},
 		{
 			"id":27,
@@ -236,7 +206,7 @@
 			"image":"eros.png",
 			"link":"http://www.erosbalazs.com/",
 			"description":"cool graphics, walk in the life of video, portfolio section, display, project display, blog style ",
-			"category":["portfolio","interactive"]
+			"category":["portfolio","interactive","website"]
 		},
 		{
 			"id":28,
@@ -244,7 +214,7 @@
 			"image":"rleo.png",
 			"link":"http://www.rleonardi.com/interactive-resume/",
 			"description":"onScroll page movement, super mario vibe, portfolio, resume, contact section",
-			"category":["portfolio","interactive","contact"]
+			"category":["portfolio","interactive","contact","website"]
 		},
 		{
 			"id":29,
@@ -252,7 +222,7 @@
 			"image":"humb.png",
 			"link":"http://www.visithumboldt.com/start",
 			"description":"pick destinations with clicker, straightforward interactive destination picker, buttons, good blending of video backgrounds",
-			"category":["interactive"]
+			"category":["interactive","website"]
 		},
 		{
 			"id":30,
@@ -260,7 +230,7 @@
 			"image":"asiatour.png",
 			"link":"https://www.insideasiatours.com/step-inside/burma",
 			"description":"choose country button reveals a cool country/desc design, good buttons",
-			"category":["interactive"]
+			"category":["interactive","website"]
 		},
 		{
 			"id":31,
@@ -268,7 +238,7 @@
 			"image":"multicraft.png",
 			"link":"http://multicraft.com/our-process/",
 			"description":"company, onScroll, diagrams, simple besides that",
-			"category":["interactive"]
+			"category":["interactive","website"]
 		},
 		{
 			"id":32,
@@ -276,7 +246,7 @@
 			"image":"pulse.png",
 			"link":"http://2016.makemepulse.com/",
 			"description":"cool visual effects, glitch effect on one of the animations, mouse hold and then move for interactivity",
-			"category":["interactive"]
+			"category":["interactive","website"]
 		},
 		{
 			"id":33,
@@ -284,7 +254,7 @@
 			"image":"histo.png",
 			"link":"http://histography.io/",
 			"description":"interactive timeline of events in various fields, images included, can zoom in and out of timeline with scroll",
-			"category":["interactive"]
+			"category":["interactive","website"]
 		},
 		{
 			"id":34,
@@ -292,7 +262,7 @@
 			"image":"sassi.png",
 			"link":"https://sassiholford.com/",
 			"description":"sleek menu design that I liked, or perhaps it was the image of the woman, who knows",
-			"category":["menu"]
+			"category":["menu","website"]
 		},
 		{
 			"id":35,
@@ -300,7 +270,7 @@
 			"image":"youandi2.png",
 			"link":"https://www.youandigraphics.com/",
 			"description":"cool 1 page app, unique design, what I do section, project display",
-			"category":["portfolio","interactive"]
+			"category":["portfolio","interactive","website"]
 		},
 		{
 			"id":36,
@@ -308,7 +278,7 @@
 			"image":"hellom.png",
 			"link":"https://hellomichael.com/",
 			"description":"unique design, video background, simplistic, project display, smooth onHovers",
-			"category":["portfolio"]
+			"category":["portfolio","website"]
 		},
 		{
 			"id":37,
@@ -316,7 +286,7 @@
 			"image":"prv.png",
 			"link":"http://x.prvrt.me/en",
 			"description":"not working properly. cant get past intro screen and go button",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":38,
@@ -324,7 +294,7 @@
 			"image":"nico.png",
 			"link":"http://nicolaserrera.com/",
 			"description":"good music, playbar moves the background, the layout, color scheme, simple blog beneath, transition",
-			"category":["design","blog"]
+			"category":["design","blog","website"]
 		},
 		{
 			"id":39,
@@ -332,7 +302,7 @@
 			"image":"nemi.png",
 			"link":"https://www.nemiroff.vodka/?valid=yes",
 			"description":"videos, fonts, simple, timeline",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":40,
@@ -340,7 +310,7 @@
 			"image":"mel.png",
 			"link":"https://www.melville-design.com/",
 			"description":"unique design, images onScroll, simplistic",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":41,
@@ -348,7 +318,7 @@
 			"image":"chris.png",
 			"link":"http://christopherprinz.com/",
 			"description":"image gallery, gallery of images floating in 3d space, onClick",
-			"category":["design","3d"]
+			"category":["design","3d","website"]
 		},
 		{
 			"id":42,
@@ -356,7 +326,7 @@
 			"image":"cuba.png",
 			"link":"https://mtcubacenter.org/",
 			"description":"lots of images, article display, imgs onHover, vivid images",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":43,
@@ -364,7 +334,7 @@
 			"image":"bad.png",
 			"link":"https://www.badruttspalace.com/en#",
 			"description":"videos, content display, menu, onScroll",
-			"category":["design","menu"]
+			"category":["design","menu","website"]
 		},
 		{
 			"id":44,
@@ -372,7 +342,7 @@
 			"image":"playandp.png",
 			"link":"https://www.playandproduce.be/",
 			"description":"intro popup art, paralax, onHover, orientation change with mouse movement",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":45,
@@ -380,7 +350,7 @@
 			"image":"aboutmatt.png",
 			"link":"http://www.aboutmatthewhall.com/examples/ui/",
 			"description":"single page slider.js, lots of visual aids, can learn something from information provided",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":46,
@@ -388,7 +358,7 @@
 			"image":"",
 			"link":"",
 			"description":"",
-			"category":[""]
+			"category":["","website"]
 		},
 		{
 			"id":47,
@@ -396,7 +366,7 @@
 			"image":"kikk.png",
 			"link":"https://www.kikk.be/2016/",
 			"description":"background, bubble expanding onScroll, get tickets button onHover, image distortion onScroll? onHover?,",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":48,
@@ -404,7 +374,7 @@
 			"image":"hp.png",
 			"link":"https://www.hpmagicwords.com.br/",
 			"description":"videos, unique design, absolute positioned, onScroll changes layout, section 2 design",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":49,
@@ -412,7 +382,7 @@
 			"image":"frida.png",
 			"link":"http://cafefrida.ca/",
 			"description":"plants absolute position around screen, mix of images with text, content display",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":50,
@@ -420,7 +390,7 @@
 			"image":"data.png",
 			"link":"https://dataveyes.com/#!/en",
 			"description":"animated, one page onScroll, cool logo that rotates, project section blog design",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":51,
@@ -428,7 +398,7 @@
 			"image":"uber.png",
 			"link":"https://www.uber.design/team",
 			"description":"about section, slider, short video clip of person going from straight to smile face, images pop up, slider to scroll through employees, title underneath, video has them talking about themselves",
-			"category":["design","about"]
+			"category":["design","about","website"]
 		},
 		{
 			"id":52,
@@ -436,7 +406,7 @@
 			"image":"kettle.png",
 			"link":"https://wearekettle.com/",
 			"description":"3d images mixed with sketch design, font type, project display",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":53,
@@ -444,7 +414,7 @@
 			"image":"technics.png",
 			"link":"https://www.technics.com/cl_en/",
 			"description":"simplistic, onHover images, menu, gallery feel",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":54,
@@ -452,7 +422,7 @@
 			"image":"plymouth.png",
 			"link":"http://plymouthgin.com/#a-modern-classic",
 			"description":"background images are mostly still but having moving parts, simple topmenu, blue tint around images",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":55,
@@ -460,7 +430,7 @@
 			"image":"pygmy.png",
 			"link":"https://www.pygmy-elephant.com/",
 			"description":"simplistic, box shadow, onHover, orientation changing video mounted on background, good ui, menu, loading screen when clicking blog",
-			"category":["design","preload"]
+			"category":["design","preload","website"]
 		},
 		{
 			"id":56,
@@ -468,7 +438,7 @@
 			"image":"ell.png",
 			"link":"http://uncomfortable.ellcreative.com/",
 			"description":"unique design, extremely creative, font/text popout, onHover menu items, moving components, about us section",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":57,
@@ -476,7 +446,7 @@
 			"image":"moxhe.png",
 			"link":"http://www.moxhe.com.au/",
 			"description":"simplistic, full page image display with text on top",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":58,
@@ -484,7 +454,7 @@
 			"image":"adham.png",
 			"link":"http://www.adhamdannaway.com/",
 			"description":"half and half image of face design, moves on mouse hover towards direction of the side mouse is on",
-			"category":["portfolio","design"]
+			"category":["portfolio","design","website"]
 		},
 		{
 			"id":59,
@@ -492,7 +462,7 @@
 			"image":"legin.png",
 			"link":"http://www.le-gin-drouin.com/en/drouin-a-tradition-of-quality",
 			"description":"unique design, one page scroll, image/text transitions, letters being traced in, color scheme",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":60,
@@ -500,7 +470,7 @@
 			"image":"russ.png",
 			"link":"http://www.russellandcodrinks.com/",
 			"description":"images come in from different sides onScroll, parallax, simplistic, background design",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":61,
@@ -508,7 +478,7 @@
 			"image":"ifly.png",
 			"link":"https://www.ifly50.com/en_us/50",
 			"description":"creative use of background clip, vivid images, gallery type menu, travel",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":62,
@@ -516,7 +486,7 @@
 			"image":"antoni.png",
 			"link":"https://antoni.de/",
 			"description":"simplistic, chopped up video transition, one page display, onHover shows preview of video",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":63,
@@ -524,7 +494,7 @@
 			"image":"ddd.png",
 			"link":"http://www.ddd.it/en",
 			"description":"short video background, large/custom font, simplistic, moving logo",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":64,
@@ -532,7 +502,7 @@
 			"image":"disco.png",
 			"link":"https://www.discoveryphototours.com/",
 			"description":"content display, vivid images, images blend into background",
-			"category":["design"]
+			"category":["design","website"]
 		},
 		{
 			"id":65,
@@ -540,7 +510,7 @@
 			"image":"scotch.png",
 			"link":"https://digital.scotch.io/",
 			"description":"simplistic, large font and graphics, text exploding pixels onHover ",
-			"category":["design","contact"]
+			"category":["design","contact","website"]
 		},
 		{
 			"id":66,
@@ -548,7 +518,7 @@
 			"image":"steph.png",
 			"link":"http://stephsassine.tumblr.com/",
 			"description":"image jumble spread effect, simplistic",
-			"category":["portfolio"]
+			"category":["portfolio","website"]
 		},
 		{
 			"id":67,
@@ -556,7 +526,7 @@
 			"image":"lexus.png",
 			"link":"https://discoverlexus.com/highlights/select",
 			"description":"transition from splash to next section, blog display,onHover button for articles",
-			"category":["design","blog"]
+			"category":["design","blog","website"]
 		},
 		{
 			"id":68,
@@ -564,7 +534,25 @@
 			"image":"diren.png",
 			"link":"http://direnduvar.com/#x=-102&y=-91&z=3",
 			"description":"turkish for resistor wall or maybe resistance wall, very interesting concept, everyone can sign a wall, there is a lot of space and everyone else can see it. have not yet figured out how to write myself",
-			"category":["interactive"]
+			"category":["interactive","website"]
+		},
+		{
+			"id":69,
+			"title":"Combadi Contact",
+			"image":"combadi.png",
+			"category":["contact","picture"]
+		},
+		{
+			"id":70,
+			"title":"Hash Blog",
+			"image":"bloghash.jpg",
+			"category":["blog","picture"]
+		},
+		{
+			"id":71,
+			"title":"Blog-Masonry",
+			"image":"blogmason.jpg",
+			"category":["blog","picture"]
 		}
 	]
 }

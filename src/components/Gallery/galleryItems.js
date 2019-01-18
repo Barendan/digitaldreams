@@ -5,6 +5,8 @@ import Slick from 'react-slick';
 const GalleryItems = (props) => {
 
 	let template = null;
+	let catalog = props.data.catalog;
+
 	const settings = {
 		dots: true,
 		infinite: true,
@@ -14,32 +16,28 @@ const GalleryItems = (props) => {
 		sldiesToScroll: 1,
 		...props.settings
 	}
+	// console.log(catalog)
 
-	switch(props.type){
-		case ('website'):
-			template = props.data.map( (item, i) => {
-				return(
-					<div key={i} className="gallery_template">
-						<a href={item.link}>
-							<div className="display_image" 
-								 style= {{ 
-								 	background:`url(../images/${item.image})`
-								}}
-							>
-								<div className="display_title">
-									{item.title}
-								</div>
+	if(catalog){
+		template = catalog.map( (item, i) => {
+			return(
+				<div key={i} className="gallery_template">
+					<a href={item.link}>
+						<div className="display_image" 
+							 style= {{ 
+							 	background:`url(../images/${item.image})`
+							}}
+						>
+							<div className="display_title">
+								{item.title}
 							</div>
-						</a>
-					</div>
-				)
-			})
-			break;
-		// case ('picture'):
-		// 	template = null;
-		// 	break;
-		default:
-			template = null;
+						</div>
+					</a>
+				</div>
+			)
+		})
+	} else {
+		template = (<div>Where is the template doe</div>);
 	}
 
 	return(
