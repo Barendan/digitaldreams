@@ -12,19 +12,18 @@ const GalleryItems = (props) => {
 	if(catalog){
 		template = catalog.map( (item, i) => {
 			return(
-				<div key={i} className="gallery_template">
-					<a href={item.link}>
-						<div className="display_image" 
-							 style= {{ 
-							 	background:`url(../images/${item.image})`
+						<div key={i}  className="display_image"
+							 style= {{
+							 	background:`url(../images/${item.image})`,
+							 	width: "180px",
+							 	height: "150px",
+							 	backgroundSize: "cover"
 							}}
 						>
 							<div className="display_title">
 								{item.title}
 							</div>
 						</div>
-					</a>
-				</div>
 			)
 		})
 	} else {
@@ -32,7 +31,7 @@ const GalleryItems = (props) => {
 	}
 
 	return(
-		<div>
+		<div className="gallery_wrapper">
 			{template}
 		</div>
 	)

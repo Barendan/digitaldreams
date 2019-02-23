@@ -1,22 +1,27 @@
+/*.gallery {
+	margin: 100px;
+}*/
+
+.category_header {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+	border: 2px solid grey;
+}
+
 .gallery_wrapper {
-	width: 80%;
-	height: 50%;
-}
-
-.gallery_template {
-
-}
-
-.gallery_template a {
-
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border: 1px outset #AAA;
+	overflow: scroll;
 }
 
 .display_image {
-	width:20%;
-	height: 20%;
-	background-size: cover;
+	border: 3px inset black;
+	margin: 5px;
 }
 
 .display_title {
-
+	display: none !important;
 }

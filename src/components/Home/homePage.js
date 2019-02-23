@@ -11,22 +11,20 @@ class Home extends Component {
 
 	render(){
 		return(
-			<div className="page">
+			<div className="page home">
 				<div className="home-wrapper">
-					<div className="home-main">
-						<h1>Design / <br/>
-							Innovation.
-						</h1>
-						<p className="intro">
-							The especially formulated taste of greatness.
-							Working with us, you will discover the space where design meets excellence.
-							We focus on the client's biggest desires and turn them into heavenly fantasies.
-						</p>
-						<span className="links">
-							<a href="#">Explore Now</a>
-							<a href="#">The Creator</a>
-						</span>
-					</div>
+					<h1>Design / <br/>
+						Innovation.
+					</h1>
+					<p className="intro">
+						The especially formulated taste of greatness.
+						Working with us, you will discover the space where design meets excellence.
+						We focus on the client's biggest desires and turn them into heavenly fantasies.
+					</p>
+					<span className="links">
+						<a href="#">Explore Now</a><br/>
+						<a href="#">The Creator</a>
+					</span>
 				</div>
 			</div>
 		)

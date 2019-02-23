@@ -1,11 +1,16 @@
 
 .page {
-	width: 100vh;
-	height: 100vh;
+	height: 90vh;
 	overflow: hidden;
-	box-sizing:border-box;
+}
+
+.home {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 100px 50px
 }
 
 .home-wrapper {
-	
+
 }
