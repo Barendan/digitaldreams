@@ -1,8 +1,11 @@
 .footer_wrapper {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: grey;
 }
 
 .footer {
-	margin: 100px;
+	margin-top: 50px;
 	margin-bottom: 0;
 }

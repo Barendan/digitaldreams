@@ -13,18 +13,28 @@ class Home extends Component {
 		return(
 			<div className="page home">
 				<div className="home-wrapper">
+
 					<h1>Design / <br/>
 						Innovation.
 					</h1>
-					<p className="intro">
-						The especially formulated taste of greatness.
-						Working with us, you will discover the space where design meets excellence.
-						We focus on the client's biggest desires and turn them into heavenly fantasies.
-					</p>
+
+					<div className="intro">
+						<p>
+							Creativity. Some say it is humanities definiting trait.
+							The internet has allowed us to access the creative power of millions of people all over the world.
+						</p>
+						<p>
+							Clarity. Taking millions of pieces of data is of no use if you can not sort it and organize it accordingly. Take control with just one click!
+						</p>
+					</div>
+
 					<span className="links">
-						<a href="#">Explore Now</a><br/>
-						<a href="#">The Creator</a>
+						<a href="https://www.typewolf.com">TypeWolf</a>
+						<a href="https://www.csswinner.com/winners">CSS Winner</a>
+						<a href="https://www.awwwards.com/">Awwwards</a>
+						<a href="https://coolors.co">Coolors</a>
 					</span>
+
 				</div>
 			</div>
 		)

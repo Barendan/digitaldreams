@@ -1,16 +1,53 @@
 
 .page {
-	height: 90vh;
+	height: 100vh;
 	overflow: hidden;
 }
 
-.home {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: 100px 50px
+.home-wrapper {
+	margin: 100px 50px;
+	font-family: 'Playfair Display', serif;
+	display:flex;
+	flex-direction:column;
 }
 
-.home-wrapper {
+.home-wrapper h1{
+	font-size: 64px;
+	font-weight: 400;
+	margin-bottom: 50px;
+}
 
+.intro {
+	display:inline-flex;
+	margin-bottom: 70px;
+
+	font-size: 12px;
+	line-height: 1.6;
+	letter-spacing: .9px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.intro p {
+	width: 50%;
+	padding-right: 40px;
+}
+
+.links {
+	display: inline-flex;
+	text-transform: uppercase;
+	font-family: 'Quicksand', sans-serif;
+	/*font-family: 'Lato', sans-serif;*/
+}
+
+.links a {
+	font-size: 14px;
+	letter-spacing: .4px;
+	font-weight: 100px;
+	color: teal;
+	text-decoration: none;
+	padding-right: 20px;
+}
+
+.links a:hover {
+	text-decoration: underline;
 }
