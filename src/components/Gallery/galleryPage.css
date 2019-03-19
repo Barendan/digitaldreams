@@ -1,6 +1,4 @@
-/*.gallery {
-	margin: 100px;
-}*/
+
 
 .category_header {
 	display: flex;
@@ -11,21 +9,35 @@
 
 .gallery_wrapper {
 	display: inline-flex;
+	width: 80%;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items:center;
 	border: 1px outset #AAA;
-	overflow: scroll;
+	overflow-y: scroll;
 }
 
+.gallery_wrapper::-webkit-scrollbar { display:none;}
+
+
+
+
+
 .display_image {
-	border: 3px inset black;
-	margin: 5px;
+	border: 5px solid black;
 	transition: all 1s;
 }
+
+
+
+
+
+/*
 .display_image:hover {
 	transform: scale(1.1);
 }
 
 .display_title {
 	display: none !important;
-}
+}*/
+

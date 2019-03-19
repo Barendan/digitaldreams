@@ -10,25 +10,27 @@ class GalleryPage extends Component {
 
 	state = {
 		data: JSON,
-		categories:[]
+		categories: []
 	}
 
 	componentWillMount = () => {
-		let catalog = this.state.data.catalog;
-		catalog.map((item,i) =>{
-			// console.log(item.category)
-		})
+
+	}
+
+	renderCategory = () => {
+		return(
+			this.state.categories.length > 1 ? "Final List" :
+			<div className="category_header">
+				"Category1 | Category2 | Category3 | Category4"
+			</div>
+		)
 	}
 
 	render(){
-	// console.log(catalog);
 		return(
 			<div className="page">
-				<div className="category_header" 
-					 options={this.state.categories}>
-					 Category1 | Category2 | Category3 | Category4
-				</div>
-				<GalleryItems data={this.state.data} />
+				{this.renderCategory()}
+				<GalleryItems data={this.state.data}/>
 			</div>
 		)
 	}
