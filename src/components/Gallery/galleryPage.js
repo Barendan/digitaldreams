@@ -23,6 +23,10 @@ class GalleryPage extends Component {
 			<div className="category_header">
 				"Category1 | Category2 | Category3 | Category4"
 			</div>
+
+
+
+
 		)
 	}
 
