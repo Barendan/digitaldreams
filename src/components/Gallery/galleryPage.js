@@ -18,15 +18,34 @@ class GalleryPage extends Component {
 	}
 
 	renderCategory = () => {
-		return(
-			this.state.categories.length > 1 ? "Final List" :
+		let allCategories = [];
+
+		this.state.data.catalog.map( (site) => {
+			site.category.map( (item) => {
+				allCategories.push(item)
+			})
+		})
+
+		// console.log(allCategories)
+		let uniqCategories = [...new Set(allCategories)]
+		console.log(uniqCategories)
+
+		const categoryList = [];
+		uniqCategories.forEach((item,i) => categoryList.push(
+			<li key={i}> {item} </li>
+		))
+
+		return (
+			this.state.categories.length < 1 ?
+			<div className="category_header">
+				<ul>
+					{categoryList}
+				</ul>
+			</div>
+			:
 			<div className="category_header">
 				"Category1 | Category2 | Category3 | Category4"
 			</div>
-
-
-
-
 		)
 	}
 

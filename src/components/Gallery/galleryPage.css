@@ -3,7 +3,16 @@
 	display: flex;
 	justify-content: center;
 	margin-bottom: 50px;
-	border: 2px solid grey;
+	border: 1px solid grey;
+}
+
+.category_header ul {
+	display: flex;
+
+}
+
+.category_header li {
+	
 }
 
 
@@ -16,8 +25,6 @@
 	justify-content: center;
 	/*margin-top: 20px;*/
 }
-
-/*.gallery_wrapper::-webkit-scrollbar { display:none;}*/
 
 .display_item {
 	position:relative;
@@ -35,52 +42,35 @@
 	bottom: 50%;
 }
 
-.display_image {
-	transition: all 1s;
-}
 
 
 
 
 
-
-.display_title {
-	display: block;
-    width: 100%;
-    height: 100%;
-
-	font-size: 20px;
-	
+.info_container {
 	position: absolute;
-	left:50%;
-	bottom: -40px;
-	margin: 0 0 -15px -70px;
-
-	text-align:center;
-	-webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-
-
-
-.work-item-title b {
     display: block;
+    right: 0;
+    top: 0;
     width: 100%;
     height: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 3% 3.3%;
+    color: #999;
+    font-size: 16px;
+    background: rgba(220,220,220, .2);
+}
+.display_item:hover .info_container {
+	background-color: #151515;
+    background-color: rgba(0,0,0, .5);
+}
 
+.display_info {
+	display: block;
     position: absolute;
-    left: 50%;
-    bottom: -40px;
-    margin: 0 0 -15px -70px;
-    background: #fff;
-    color: #151515;
-    font-size: 14px;
-    line-height: 30px;
-    text-align: center;
+    bottom: -100px;
+    color: #fff;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -88,17 +78,15 @@
     transition: all 0.3s ease-out;
 }
 
-/*
-    position: absolute;
-    display: block;
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    text-align: right;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 3% 4.3%;
-    color: #999;
-    font-size: 16px;
-    background: rgba(220,220,220, .2);*/
+.display_info b {
+    font-size: 18px;
+}
+
+.display_info i {
+    font-size: 12px;
+}
+
+.display_item:hover .display_info {
+    bottom: 20%;
+}
+

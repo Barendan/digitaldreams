@@ -14,8 +14,8 @@ const GalleryItems = (props) => {
 	if(catalog){
 		template = catalog.map( (item, i) => {
 			return(
-				<div className="display_item">
-					<div key={i}  className="display_image"
+				<div className="display_item" key={item.id} >
+					<div className="display_image"
 						 style= {{
 						 	background:`url(../images/${item.image})`,
 						 	width: "200px",
@@ -24,9 +24,14 @@ const GalleryItems = (props) => {
 						}}
 					>
 					</div>
-					<div className="display_title">
-						{item.title}
-					</div>
+					<a link href={item.link} target="_blank">
+						<div className="info_container">
+							<div className="display_info">
+								<b>{item.title}</b><br/>
+								<i>{item.description}</i>
+							</div>
+						</div>
+					</a>
 				</div>
 			)
 		})
