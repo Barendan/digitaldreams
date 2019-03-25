@@ -6,13 +6,17 @@
 	border: 1px solid grey;
 }
 
+.category_header button {
+	
+}
+
 .category_header ul {
 	display: flex;
 
 }
 
 .category_header li {
-	
+
 }
 
 

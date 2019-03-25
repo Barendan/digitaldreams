@@ -10,14 +10,11 @@ class GalleryPage extends Component {
 
 	state = {
 		data: JSON,
-		categories: []
+		filteredData:[],
+		uniqCat: []
 	}
 
 	componentWillMount = () => {
-
-	}
-
-	renderCategory = () => {
 		let allCategories = [];
 
 		this.state.data.catalog.map( (site) => {
@@ -25,21 +22,32 @@ class GalleryPage extends Component {
 				allCategories.push(item)
 			})
 		})
+		let uniqCat = [...new Set(allCategories)]
 
-		// console.log(allCategories)
-		let uniqCategories = [...new Set(allCategories)]
-		console.log(uniqCategories)
+		this.setState({
+			uniqCat
+		});
+	}
 
-		const categoryList = [];
-		uniqCategories.forEach((item,i) => categoryList.push(
-			<li key={i}> {item} </li>
+	renderCategories = () => {
+		let uniqCat = this.state.uniqCat;
+
+		const categoryItems = [];
+		uniqCat.forEach((item,i) => categoryItems.push(
+			<button
+				key={i}
+				onClick={this.filterData(item)}
+				className="categoryButton"
+			>
+					<li> {item} </li>
+			</button>
 		))
 
 		return (
-			this.state.categories.length < 1 ?
+			this.state.uniqCat.length > 1 ?
 			<div className="category_header">
 				<ul>
-					{categoryList}
+					{categoryItems}
 				</ul>
 			</div>
 			:
@@ -49,11 +57,30 @@ class GalleryPage extends Component {
 		)
 	}
 
+	filterData = (keyword) => (e) => {
+		e.preventDefault();
+		let filteredData = [];
+
+		this.state.data.catalog.filter( (item) => {
+			if(item.category.includes(keyword)) {
+				return filteredData.push(item)
+			} else {
+				console.log("rejected")
+			}
+		})
+
+		this.setState({
+			filteredData
+		})
+		// console.log(this.state.filteredData);
+		// console.log(filteredData);
+	}
+
 	render(){
 		return(
 			<div className="page">
-				{this.renderCategory()}
-				<GalleryItems data={this.state.data}/>
+				{this.renderCategories()}
+				<GalleryItems data={this.state.data} filteredData={this.state.filteredData}/>
 			</div>
 		)
 	}
