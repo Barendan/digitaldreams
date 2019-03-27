@@ -79,7 +79,7 @@ class GalleryPage extends Component {
 		e.preventDefault();
 		let filteredData = [];
 
-		this.state.data.catalog.filter( (item) => {
+		this.state.data.filter( (item) => {
 			if(item.category.includes(keyword)) {
 				return filteredData.push(item)
 			} else {
@@ -90,8 +90,6 @@ class GalleryPage extends Component {
 		this.setState({
 			filteredData
 		})
-		// console.log(this.state.filteredData);
-		// console.log(filteredData);
 	}
 
 	render(){

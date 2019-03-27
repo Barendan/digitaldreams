@@ -10,6 +10,10 @@ class Home extends Component {
 	render(){
 		return(
 			<div className="page">
+				<div className="logo">
+					<img src="./ddLogo.png"/>
+				</div>
+
 				<div className="home-wrapper">
 
 					<h1>Design / <br/>
@@ -24,6 +28,7 @@ class Home extends Component {
 						<p>
 							Clarity. Taking millions of pieces of data is of no use if you can not sort it and organize it accordingly. Take control with just one click!
 						</p>
+						<p className="placeholder"></p>
 					</div>
 
 					<span className="links">

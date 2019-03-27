@@ -12,8 +12,7 @@ const GalleryItems = (props) => {
 
 	// console.log(filtered);
 
-
-	if(filtered.length < 1){
+	if(!filtered.length){
 		template = catalog.map( (item, i) => {
 			return(
 				<div className="display_item" key={item.id} >
