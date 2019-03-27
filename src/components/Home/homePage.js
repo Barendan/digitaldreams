@@ -5,9 +5,7 @@ import './homePage.css';
 
 class Home extends Component {
 
-	state = {
-
-	}
+	state = {}
 
 	render(){
 		return(

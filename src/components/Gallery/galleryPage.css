@@ -2,22 +2,154 @@
 .category_header {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 50px;
-	border: 1px solid grey;
+	/*margin-bottom: 50px;*/
+	/*border: 1px solid grey;*/
 }
 
 .category_header button {
-	
+	background-color: transparent;
+	border: none;
+	outline: none;
 }
 
 .category_header ul {
 	display: flex;
-
+	flex-wrap:wrap;
+	justify-content:center;
+	flex-basis: 70%;
 }
 
 .category_header li {
+    display: inline-block;
+	text-shadow: 0 0 1px rgba(111,134,134,0.3);
+	color: #6f8686;
+	height: 30px;
+	line-height: 30px;
 
+	padding:0 10px;
+	margin: 3px;
+	/*margin: 15px 25px;*/
+	position: relative;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    cursor: pointer;
 }
+
+.category_header li::before {
+	color: #fff;
+	content: attr(data-hover);
+	position: absolute;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    pointer-events: none;
+	opacity: 0;
+	
+    -webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+    -moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+    transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.category_header li:hover::before, .category_header li:focus::before {
+    opacity: 1;
+    -webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+    -moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+    transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+}
+
+
+
+/*-----------------------------------------------------------*/
+	/*EFFECT NUMBER 14*/
+
+/**, *:after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.category_header li {
+    display: inline-block;
+	text-shadow: 0 0 1px rgba(111,134,134,0.3);
+	color: #6f8686;
+	height: 40px;
+	line-height: 40px;
+
+	padding:0 20px;
+	margin: 3px;
+	/*margin: 15px 25px;*/
+/*	position: relative;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;*/
+    /*font-size: 1.25em;*/
+/*}*/
+/*
+.category_header li::before, .category_header li::after {
+    position: absolute;
+    width: 45px;
+    height: 2px;
+    background: #fff;
+    content: '';
+    opacity: 0.2;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+.category_header li::before {
+    top: 0;
+    left: 0;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.category_header li::after {
+    right: 0;
+    bottom: 0;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: 100% 0;
+    -moz-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+}
+
+.category_header li:hover::before, .category_header li:focus::before {
+    left: 50%;
+    -webkit-transform: rotate(0deg) translateX(-50%);
+    -moz-transform: rotate(0deg) translateX(-50%);
+    transform: rotate(0deg) translateX(-50%);
+}
+.category_header li:hover::after, .category_header li:focus::after {
+    right: 50%;
+    -webkit-transform: rotate(0deg) translateX(50%);
+    -moz-transform: rotate(0deg) translateX(50%);
+    transform: rotate(0deg) translateX(50%);
+}
+.category_header li:hover::before, .category_header li:hover::after, .category_header li:focus::before, .cl-effect-14 a:focus::after {
+    opacity: 1;
+}
+
+.category_header li:hover {
+	color:white;
+}*/
+
+
+
+
+
+
 
 
 
@@ -27,7 +159,6 @@
 	display: inline-flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	/*margin-top: 20px;*/
 }
 
 .display_item {
@@ -39,7 +170,7 @@
 }
 
 .display_item:hover {
-	border: 2px solid goldenrod;
+	border: 2px solid white;
 }
 
 .display_item:hover .display_title {

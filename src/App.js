@@ -2,19 +2,15 @@ import React from 'react';
 
 import HomePage from './components/Home/homePage';
 import GalleryPage from './components/Gallery/galleryPage';
-import Footer from './components/Footer/footer';
 
 // import ReactFullpage from '@fullpage/react-fullpage';
 // import "fullpage.js/vendors/scrolloverflow";
-
-
 
 
 const App = () => (
       <div>
           <HomePage />
           <GalleryPage />		
-          <Footer />				
       </div>
 )
 

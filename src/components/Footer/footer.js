@@ -4,7 +4,7 @@ import './footer.css';
 const Footer = () => (
 	<div className="footer_wrapper">
 		<div className="footer">
-			Link1 | Link2 | Link3 | Link4 | Copyright DigitalDreams 2019 C
+			&copy; 2019 Created by LionCoded
 		</div>
 	</div>
 

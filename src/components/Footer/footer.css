@@ -1,11 +1,13 @@
 .footer_wrapper {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: grey;
+	background-color: #aab7b7;
+	border-top: 1px solid #939e9e;
 }
 
 .footer {
-	margin-top: 50px;
-	margin-bottom: 0;
+	font-size: 12px;
+	padding: 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
+	color: #365b5b;
 }

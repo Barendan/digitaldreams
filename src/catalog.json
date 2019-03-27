@@ -5,71 +5,71 @@
 			"title":"Marine SAS",
 			"image":"msas.png",
 			"link":"http://marinesas.com/",
-			"description":"Design Scheme, color choices, parallax effect, simplistic, onHover water effect, world map, menu",
-			"category":["design","website"]
+			"description":"A website that starts underwater",
+			"category":["videos","images","menu"]
 		},
 		{
 			"id":2,
 			"title":"Titus Klein",
 			"image":"tklein.png",
 			"link":"http://titusklein.com/",
-			"description":"cover page, onHovers, simplistic, giant X on menu",
-			"category":["design"]
+			"description":"The allure of clean simplicity",
+			"category":["simple"]
 		},
 		{
 			"id":3,
 			"title":"we3",
 			"image":"we3.png",
 			"link":"https://we3.jam3.com/developer",
-			"description":"intro, color scheme, design layout, onScroll transitions",
-			"category":["design"]
+			"description":"A brilliant stitching of image & text",
+			"category":["images","fonts","transitions"]
 		},
 		{
 			"id":4,
 			"title":"SilaSveta",
 			"image":"ssveta.png",
 			"link":"http://silasveta.com/",
-			"description":"gradient background, font colors vs background, creative project display",
-			"category":["design"]
+			"description":"Gradient to set the mood",
+			"category":["videos","images","fonts","transitions","contact"]
 		},
 		{
 			"id":5,
 			"title":"Riangle",
 			"image":"riangle.png",
 			"link":"https://www.riangle.com/",
-			"description":"unique design, menu, map, large 3d images ",
-			"category":["design"]
+			"description":"Info contained in graphics that keep you wanting more",
+			"category":["portfolio","images","fonts","menu"]
 		},
 		{
 			"id":6,
 			"title":"Emiliano",
 			"image":"emil.png",
 			"link":"http://www.emilianobarri.com/proyectos",
-			"description":"color scheme, 3d appearence,",
-			"category":["design", "colors"]
+			"description":"Superb color scheme brings it all to life",
+			"category":["images","fonts","transitions"]
 		},
 		{
 			"id":7,
 			"title":"Plug And Play",
 			"image":"pandp.png",
 			"link":"https://www.plugandplaydesign.co.uk/",
-			"description":"onHover popup, blog, top menu",
-			"category":["design", "basic"]
+			"description":"Extremely basic but clean",
+			"category":["simple","contact"]
 		},
 		{
 			"id":8,
 			"title":"Mairik",
 			"image":"mairik.png",
 			"link":"http://mairik.com/",
-			"description":"image onHovers, elegant feel, transition onScroll",
-			"category":["design", "onHover"]
+			"description":"Make me something quick but nice, they said",
+			"category":["simple"]
 		},
 		{
 			"id":9,
 			"title":"Go Health FAQ",
 			"image":"faqgohealth.png",
 			"link":"https://gohealthynatural.com/pages/faqs",
-			"description":"",
+			"description":"extracted from website",
 			"category":["faq"]
 		},
 		{
@@ -77,32 +77,32 @@
 			"title":"5 Hour Energy FAQ",
 			"image":"faq5hourenergy.png",
 			"link":"https://5hourenergy.com/facts/faqs/",
-			"description":"",
+			"description":"extracted from website",
 			"category":["faq"]
 		},
 		{
 			"id":12,
-			"title":"Plug and Play Contact",
-			"image":"contactpp.png",
-			"link":"https://www.plugandplaydesign.co.uk/contact/",
+			"title":"",
+			"image":"",
+			"link":"",
 			"description":"",
-			"category":["contact"]
+			"category":[]
 		},
 		{
 			"id":13,
 			"title":"You and I Contact",
 			"image":"youandi.png",
 			"link":"https://www.youandigraphics.com/contact.html",
-			"description":"",
+			"description":"extracted from website",
 			"category":["contact"]
 		},
 		{
 			"id":14,
-			"title":"Vito Salv Contact",
+			"title":"Vito Salv",
 			"image":"vito.png",
-			"link":"http://www.vitosalvatore.com/contact/",
-			"description":"",
-			"category":["contact"]
+			"link":"http://www.vitosalvatore.com",
+			"description":"Is this a photographer or a webdev",
+			"category":["portfolio","slide","images","contact","onLoad","about"]
 		},
 		{
 			"id":15,
@@ -310,7 +310,7 @@
 			"image":"mel.png",
 			"link":"",
 			"description":"unique design, images onScroll, simplistic",
-			"category":[""]
+			"category":[]
 		},
 		{
 			"id":41,
@@ -358,7 +358,7 @@
 			"image":"",
 			"link":"",
 			"description":"",
-			"category":[""]
+			"category":[]
 		},
 		{
 			"id":47,
@@ -382,7 +382,7 @@
 			"image":"frida.png",
 			"link":"http://cafefrida.ca/",
 			"description":"Flower Cafe w/ a pleasant vibe",
-			"category":["niche","images","font"]
+			"category":["niche","images","fonts"]
 		},
 		{
 			"id":50,
@@ -430,7 +430,7 @@
 			"image":"pygmy.png",
 			"link":"https://www.pygmy-elephant.com/",
 			"description":"Vivid images and spectacular design",
-			"category":["images","videos","preload","menu"]
+			"category":["images","videos","onLoad","menu"]
 		},
 		{
 			"id":56,
@@ -438,7 +438,7 @@
 			"image":"ell.png",
 			"link":"http://uncomfortable.ellcreative.com/",
 			"description":"Simplicity dosed with popart effects",
-			"category":["niche","font","images"]
+			"category":["niche","fonts","images"]
 		},
 		{
 			"id":57,

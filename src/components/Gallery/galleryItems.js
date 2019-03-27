@@ -7,10 +7,11 @@ import ShadowScrollbar from './Scrollbar/shadowScrollbar';
 const GalleryItems = (props) => {
 
 	let template = null;
-	let catalog = props.data.catalog;
+	let catalog = props.data;
 	let filtered = props.filteredData;
 
 	// console.log(filtered);
+
 
 	if(filtered.length < 1){
 		template = catalog.map( (item, i) => {
@@ -25,7 +26,7 @@ const GalleryItems = (props) => {
 						}}
 					>
 					</div>
-					<a link href={item.link} target="_blank">
+					<a link href={item.link} target="_blank" rel="noopener noreferrer">
 						<div className="info_container">
 							<div className="display_info">
 								<b>{item.title}</b><br/>
@@ -49,7 +50,7 @@ const GalleryItems = (props) => {
 						}}
 					>
 					</div>
-					<a link href={item.link} target="_blank">
+					<a link href={item.link} target="_blank" rel="noopener noreferrer">
 						<div className="info_container">
 							<div className="display_info">
 								<b>{item.title}</b><br/>
@@ -65,9 +66,10 @@ const GalleryItems = (props) => {
 	return(
 		<ShadowScrollbar
 			style={{ 
-				height:"80%",
+				height:"71%",
 				width:"67%",
 				margin: "0 auto",
+				marginBottom: '40px',
 				backgroundColor: ""
 		}}>
 			<div className="gallery_wrapper">

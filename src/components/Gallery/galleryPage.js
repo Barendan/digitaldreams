@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import GalleryItems from './galleryItems';
+import Footer from '../Footer/footer';
 import './galleryPage.css';
 
 import JSON from '../../catalog.json';
@@ -19,15 +20,36 @@ class GalleryPage extends Component {
 
 		this.state.data.catalog.map( (site) => {
 			site.category.map( (item) => {
-				allCategories.push(item)
+				return allCategories.push(item)
 			})
 		})
+
 		let uniqCat = [...new Set(allCategories)]
+		let shuffledData = this.shuffleArray(this.state.data.catalog);
 
 		this.setState({
+			data: shuffledData,
 			uniqCat
 		});
 	}
+
+	shuffleArray = (array) => {
+	    let ctr = array.length, temp, index;
+
+	// While there are elements in the array
+	    while (ctr > 0) {
+	// Pick a random index
+	        index = Math.floor(Math.random() * ctr);
+	// Decrease ctr by 1
+	        ctr--;
+	// And swap the last element with it
+	        temp = array[ctr];
+	        array[ctr] = array[index];
+	        array[index] = temp;
+	    }
+	    return array;
+	}
+
 
 	renderCategories = () => {
 		let uniqCat = this.state.uniqCat;
@@ -39,7 +61,7 @@ class GalleryPage extends Component {
 				onClick={this.filterData(item)}
 				className="categoryButton"
 			>
-					<li> {item} </li>
+				<li data-hover={item}> {item} </li>
 			</button>
 		))
 
@@ -81,6 +103,7 @@ class GalleryPage extends Component {
 			<div className="page">
 				{this.renderCategories()}
 				<GalleryItems data={this.state.data} filteredData={this.state.filteredData}/>
+				<Footer />
 			</div>
 		)
 	}

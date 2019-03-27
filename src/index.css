@@ -15,3 +15,9 @@ code {
 	font-size: 16px;
 	padding: 20px;
 }
+
+.page {
+	height: 100vh;
+	overflow: hidden;
+	background-color: #aab7b7;
+}
