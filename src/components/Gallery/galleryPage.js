@@ -48,18 +48,18 @@ class GalleryPage extends Component {
 
 
 	renderCategories = () => {
-		let uniqCat = this.state.uniqCat;
-
-		const categoryItems = [];
-		uniqCat.forEach((item,i) => categoryItems.push(
-			<button
-				key={i}
-				onClick={this.filterData(item)}
-				className="categoryButton"
-			>
-				<li data-hover={item}> {item} </li>
-			</button>
-		))
+		const categoryItems = this.state.uniqCat.map( (item,i) => {
+			return (
+				<li
+					key={i}
+					onClick={this.filterHandler}
+					className="ready"
+					item={item}
+				>
+					{item}
+				</li>
+			)
+		})
 
 		return (
 			this.state.uniqCat.length > 1 ?
@@ -75,21 +75,46 @@ class GalleryPage extends Component {
 		)
 	}
 
-	filterData = (keyword) => (e) => {
-		e.preventDefault();
+	filterHandler = e => {
+		e.target.classList.toggle('active');
+		e.target.classList.toggle('ready');
+		// this.filterData(this.props.item);
+	}
+
+	filterData = item => {
 		let filteredData = [];
+		
+		if(item.hasClass("ready")){
+			console.log("workie workie jerky");
 
-		this.state.data.filter( (item) => {
-			if(item.category.includes(keyword)) {
-				return filteredData.push(item)
-			} else {
-				console.log("rejected")
-			}
-		})
+			// .removeClass("ready").addClass("active");
 
-		this.setState({
-			filteredData
-		})
+			// this.state.data.filter( (item) => {
+			// 	if(item.category.includes(keyword)) {
+			// 		return filteredData.push(item)
+			// 	} else {
+			// 		console.log("rejected")
+			// 	}
+			// })
+
+			// this.setState({
+			// 	filteredData
+			// })
+		}
+		else {
+			console.log("no workie");
+
+			// .removeClass("active").addClass("ready");
+
+			// this.state.data.filter( (item) => {
+			// 	if(item.category.includes(keyword)) {
+			// 		return filteredData.push(item)
+			// 	} else {
+			// 		console.log("rejected")
+			// 	}
+			// })
+		}
+
 	}
 
 	render(){
