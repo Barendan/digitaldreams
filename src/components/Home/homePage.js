@@ -11,7 +11,7 @@ class Home extends Component {
 		return(
 			<div className="page">
 				<div className="logo">
-					<img src="./ddLogo.png"/>
+					<img src="./ddLogo.png" alt="website logo"/>
 				</div>
 
 				<div className="home-wrapper">

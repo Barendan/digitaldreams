@@ -39,7 +39,7 @@ const GalleryItems = (props) => {
 	} else {
 		template = filtered.map( (item, i) => {
 			return(
-				<div className="display_item" key={item.id} >
+				<div className="display_item" key={i} >
 					<div className="display_image"
 						 style= {{
 						 	background:`url(../images/${item.image})`,

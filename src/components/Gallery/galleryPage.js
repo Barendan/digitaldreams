@@ -17,19 +17,19 @@ class GalleryPage extends Component {
 
 	componentWillMount = () => {
 		let allCategories = [];
-
 		this.state.data.catalog.map( (site) => {
-			site.category.map( (item) => {
-				return allCategories.push(item)
-			})
+			return (
+				site.category.map( (item) => {
+					return allCategories.push(item)
+				})
+			)
 		})
-
 		let uniqCat = [...new Set(allCategories)]
+		
 		let shuffledData = this.shuffleArray(this.state.data.catalog);
-
 		this.setState({
-			data: shuffledData,
-			uniqCat
+			uniqCat,
+			data: shuffledData
 		});
 	}
 
@@ -46,81 +46,55 @@ class GalleryPage extends Component {
 	    return array;
 	}
 
+	filterHandler = (keyword) => e => {
+		this.filterData(e,keyword);
 
-	renderCategories = () => {
-		const categoryItems = this.state.uniqCat.map( (item,i) => {
-			return (
-				<li
-					key={i}
-					onClick={this.filterHandler}
-					className="ready"
-					item={item}
-				>
-					{item}
-				</li>
-			)
-		})
-
-		return (
-			this.state.uniqCat.length > 1 ?
-			<div className="category_header">
-				<ul>
-					{categoryItems}
-				</ul>
-			</div>
-			:
-			<div className="category_header">
-				"Category1 | Category2 | Category3 | Category4"
-			</div>
-		)
-	}
-
-	filterHandler = e => {
 		e.target.classList.toggle('active');
 		e.target.classList.toggle('ready');
-		// this.filterData(this.props.item);
 	}
 
-	filterData = item => {
-		let filteredData = [];
-		
-		if(item.hasClass("ready")){
-			console.log("workie workie jerky");
+	filterData = (e, keyword) => {
+		let filteredData = this.state.filteredData;
+		let incomingData = [];
+		let itemClass = e.target.classList;
 
-			// .removeClass("ready").addClass("active");
-
-			// this.state.data.filter( (item) => {
-			// 	if(item.category.includes(keyword)) {
-			// 		return filteredData.push(item)
-			// 	} else {
-			// 		console.log("rejected")
-			// 	}
-			// })
-
-			// this.setState({
-			// 	filteredData
-			// })
+		if(itemClass.contains('ready')){
+			incomingData = this.state.data.filter( (item) => {
+				return item.category.includes(keyword)
+			})
+			this.setState({ filteredData: [...filteredData,...incomingData] })
 		}
 		else {
-			console.log("no workie");
-
-			// .removeClass("active").addClass("ready");
-
-			// this.state.data.filter( (item) => {
-			// 	if(item.category.includes(keyword)) {
-			// 		return filteredData.push(item)
-			// 	} else {
-			// 		console.log("rejected")
-			// 	}
-			// })
+			incomingData = this.state.filteredData.filter( (item) => {
+				return !item.category.includes(keyword)
+			})
+			!incomingData ? 
+				this.setState({ filteredData: [] })
+			:			
+				this.setState({ filteredData: incomingData })
 		}
-
 	}
 
 	render(){
 		return(
 			<div className="page">
-				{this.renderCategories()}
+				<div className="category_header">
+					<ul>
+					{this.state.uniqCat.map( (item,i) => {
+						return (
+							<li
+								key={i}
+								onClick={this.filterHandler(item)}
+								className="ready"
+								item={item}
+							>
+								{item}
+							</li>
+						)
+					})}
+					</ul>
+				</div>
+
 				<GalleryItems data={this.state.data} filteredData={this.state.filteredData}/>
 				<Footer />
 			</div>

@@ -9,8 +9,8 @@ import GalleryPage from './components/Gallery/galleryPage';
 
 const App = () => (
       <div>
-          <HomePage />
-          <GalleryPage />		
+        <HomePage />
+        <GalleryPage />		
       </div>
 )
 
