@@ -66,35 +66,43 @@
 		},
 		{
 			"id":9,
-			"title":"Go Health FAQ",
-			"image":"faqgohealth.png",
-			"link":"https://gohealthynatural.com/pages/faqs",
-			"description":"extracted from website",
-			"category":["faq"]
+			"title":"Daniel Spatzek",
+			"image":"dnlsptzk.png",
+			"link":"https://www.danielspatzek.com/viita_titan",
+			"description":"Each project gets 5 minutes of glory",
+			"category":["portfolio","effects","niche"]
+		},
+		{
+			"id":10,
+			"title":"noformat",
+			"image":"noformat.png",
+			"link":"https://noformat.com/",
+			"description":"Keeping your eyes glued",
+			"category":["niche","slide","images","effects"]
 		},
 		{
 			"id":11,
-			"title":"5 Hour Energy FAQ",
-			"image":"faq5hourenergy.png",
-			"link":"https://5hourenergy.com/facts/faqs/",
-			"description":"extracted from website",
-			"category":["faq"]
+			"title":"Bishop Design",
+			"image":"bishop.png",
+			"link":"https://wearebishopdesign.com/",
+			"description":"Sacred geometry of design",
+			"category":["niche","videos","images","effects","contact"]
 		},
 		{
 			"id":12,
-			"title":"",
-			"image":"",
-			"link":"",
-			"description":"",
-			"category":[]
+			"title":"GoMim",
+			"image":"mim.png",
+			"link":"https://gomim.com/en/",
+			"description":"Moving with a bounce in each step",
+			"category":["simple","effects"]
 		},
 		{
 			"id":13,
-			"title":"You and I Contact",
-			"image":"youandi.png",
-			"link":"https://www.youandigraphics.com/contact.html",
-			"description":"extracted from website",
-			"category":["contact"]
+			"title":"Asaro",
+			"image":"asaro.png",
+			"link":"https://asaro.co.uk/",
+			"description":"Journey to find an adventure",
+			"category":["effects","images"]
 		},
 		{
 			"id":14,
